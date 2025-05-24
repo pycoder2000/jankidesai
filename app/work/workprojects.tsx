@@ -27,7 +27,7 @@ export default function WorkProjects() {
             index={index}
             title={workproject.title}
             url={workproject.url}
-            role={workproject.role}
+            tags={workproject.tags}
             setModal={setModal}
           />
         </motion.div>

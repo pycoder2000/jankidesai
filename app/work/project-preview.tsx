@@ -102,10 +102,10 @@ export default function WorkProjectPreview({ modal, workprojects }: WorkProjectM
                 key={`modal_${index}`}
               >
                 <Image
-                  className="h-auto"
+                  className="h-auto object-contain"
                   src={`/static/images/work/${src}`}
-                  width={300}
-                  height={300}
+                  width={350}
+                  height={350}
                   alt="image"
                 />
               </div>
