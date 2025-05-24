@@ -20,7 +20,7 @@ export default function Footer() {
               <li>{`© ${new Date().getFullYear()}`}</li>
               <li>{` • `}</li>
               <li>
-                <Link href="/">Dale Larroder</Link>
+                <Link href="/">Janki Desai</Link>
               </li>
             </ul>
             <ul className="flex cursor-pointer items-center">
@@ -46,7 +46,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://x.com/dalelarroder"
+                  href="https://x.com/jankidesai"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="twitter"
@@ -56,7 +56,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://www.instagram.com/dalelarroder/"
+                  href="https://www.instagram.com/jankidesai/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="instagram"

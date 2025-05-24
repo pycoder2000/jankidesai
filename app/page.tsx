@@ -2,7 +2,6 @@ import classNames from 'classnames';
 import Link from 'next/link';
 import { BackgroundGradientAnimation } from './components/background-gradient-animation';
 import { AtSignIcon } from './components/layouts/icons/at-sign-icon';
-import { GithubIcon } from './components/layouts/icons/github-icon';
 import { LinkedinIcon } from './components/layouts/icons/linkedin-icon';
 import { XIcon } from './components/layouts/icons/x-icon';
 import ThemeSwitch from './components/layouts/theme-switch/theme-switch';
@@ -23,20 +22,22 @@ export default function Home() {
             </h1>
             <section className="relative z-10">
               <p className="text-base text-justify">
-                I&apos;m Dale Larroder — a Software Engineer and forever a student of the craft. I
-                love building things for the web and am always on the lookout for new challenges and
-                opportunities to learn. I&apos;m passionate about creating beautiful and functional
-                user experiences. I believe the best way to learn is by doing, so I&apos;m
-                constantly exploring new technologies. Right now, I&apos;m building cool things at{' '}
+                I&apos;m Janki Desai — a designer with a passion for building inclusive,
+                human-centric experiences. I believe that great design is not just about aesthetics
+                but also about creating meaningful and accessible interactions that empower users.{' '}
+                <br />
+                Currently, I&apos;m focused on designing simplified and intuitive UX for
+                cloud-native enterprise applications at{' '}
                 <a
-                  href="https://www.aphex.co/"
+                  href="https://www.microsoft.com/"
                   className="underline-magical"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Aphex
+                  Microsoft
                 </a>
-                .
+                . When I&apos;m not designing, I enjoy exploring new design trends, learning about
+                emerging technologies, and finding inspiration in everyday life.
               </p>
             </section>
             <section className="relative z-10 flex space-x-4 items-center text-sm">
@@ -44,7 +45,7 @@ export default function Home() {
                 <p>More about me: </p>
                 <div className="flex -ml-2">
                   <Link
-                    href="https://www.linkedin.com/in/dale-larroder/"
+                    href="https://www.linkedin.com/in/jdesai96/"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="linkedin"
@@ -52,32 +53,24 @@ export default function Home() {
                     <LinkedinIcon className="h-9 w-9" />
                   </Link>
                   <Link
-                    href="https://github.com/dlarroder"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="github"
-                  >
-                    <GithubIcon className="h-9 w-9" />
-                  </Link>
-                  <Link
-                    href="https://x.com/dalelarroder"
+                    href="https://x.com/jankidesai"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="twitter"
                   >
                     <XIcon className="h-9 w-9" />
                   </Link>
-                  <a href="mailto:hi@dalelarroder.com" aria-label="email" rel="noreferrer">
+                  <a href="mailto:desaijanki1996@gmail.com" aria-label="email" rel="noreferrer">
                     <AtSignIcon className="h-9 w-9" />
                   </a>
                 </div>
               </div>
               <div className="h-14 border-l border-gray-300" />
               <div className="flex flex-wrap space-x-3 space-y-1">
+                <Link href="/work">/work</Link>
                 <Link href="/projects">/projects</Link>
-                <Link href="/thoughts">/thoughts</Link>
+                {/* <Link href="/thoughts">/thoughts</Link> */}
                 <Link href="/uses">/uses</Link>
-                <Link href="/stats">/stats</Link>
               </div>
             </section>
           </div>
