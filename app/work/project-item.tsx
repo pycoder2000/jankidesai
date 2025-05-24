@@ -1,14 +1,14 @@
-import { ProjectModal } from './types';
+import { WorkProjectModal } from './types';
 
-interface ProjectProps {
+interface WorkProjectProps {
   index: number;
   title: string;
   url: string;
   role: string;
-  setModal: (modal: ProjectModal) => void;
+  setModal: (modal: WorkProjectModal) => void;
 }
 
-export default function ProjectItem({ index, title, url, role, setModal }: ProjectProps) {
+export default function WorkProjectItem({ index, title, url, role, setModal }: WorkProjectProps) {
   return (
     <a
       href={url}

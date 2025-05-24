@@ -1,6 +1,4 @@
-import { Project } from './types';
-
-export const projects: Project[] = [
+export const workprojects: WorkProject[] = [
   {
     title: 'Aphex Planner',
     src: 'planner-app.webp',

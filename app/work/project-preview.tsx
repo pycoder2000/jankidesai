@@ -4,11 +4,11 @@ import gsap from 'gsap';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
-import { Project, ProjectModal } from './types';
+import { WorkProjectModal } from './types';
 
-interface ProjectModalProps {
-  modal: ProjectModal;
-  projects: Project[];
+interface WorkProjectModalProps {
+  modal: WorkProjectModal;
+  workprojects: WorkProject[];
 }
 
 const scaleAnimation = {
@@ -27,7 +27,7 @@ const scaleAnimation = {
   },
 };
 
-export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
+export default function WorkProjectPreview({ modal, workprojects }: WorkProjectModalProps) {
   const { active, index } = modal;
   const modalContainer = useRef<HTMLDivElement>(null);
   const cursor = useRef<HTMLDivElement>(null);
@@ -93,8 +93,8 @@ export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
             transition: 'top 0.6s cubic-bezier(0.76, 0, 0.24, 1)',
           }}
         >
-          {projects.map((project, index) => {
-            const { src, color } = project;
+          {workprojects.map((workproject, index) => {
+            const { src, color } = workproject;
             return (
               <div
                 className="flex h-full w-full items-center justify-center"
@@ -103,7 +103,7 @@ export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
               >
                 <Image
                   className="h-auto"
-                  src={`/static/images/project/${src}`}
+                  src={`/static/images/work/${src}`}
                   width={300}
                   height={300}
                   alt="image"

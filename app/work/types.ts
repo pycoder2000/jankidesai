@@ -1,4 +1,4 @@
-export interface Project {
+export interface WorkProject {
   title: string;
   src: string;
   color: string;
