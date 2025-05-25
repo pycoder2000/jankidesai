@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       <BackgroundGradientAnimation>
         <div className={classNames('relative min-h-svh', merryWeather.className)}>
-          <div className="absolute top-[20%] md:top-[40%] max-w-5xl flex-col space-y-4 justify-center px-8 md:px-24 text-shadow-lg lg:ml-14">
+          <div className="absolute top-[20%] md:top-[40%] max-w-5xl flex-col space-y-4 justify-center px-8 md:px-24 lg:ml-1">
             <h1 className="font-serif text-2xl font-medium md:mr-4 md:text-4xl">
               Welcome to my <span className="font-bold">personal portfolio — </span> or, as I like
               to call it, my <span className="italic border-b">playground</span> on the web.
