@@ -21,6 +21,13 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/**/*.tsx|ts", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/**/*.tsx|ts",
+    ".next/types/**/*.ts",
+    "app/components/renderCanvas.js"
+  ],
   "exclude": ["node_modules"]
 }

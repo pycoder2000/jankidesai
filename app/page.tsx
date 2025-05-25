@@ -1,13 +1,24 @@
+'use client';
+
 import classNames from 'classnames';
 import Link from 'next/link';
+import { useEffect, useRef } from 'react';
 import { BackgroundGradientAnimation } from './components/background-gradient-animation';
 import { AtSignIcon } from './components/layouts/icons/at-sign-icon';
 import { LinkedinIcon } from './components/layouts/icons/linkedin-icon';
 import { XIcon } from './components/layouts/icons/x-icon';
 import ThemeSwitch from './components/layouts/theme-switch/theme-switch';
+import { renderCanvas } from './components/renderCanvas';
 import { merryWeather } from './fonts';
 
 export default function Home() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    if (canvasRef.current) {
+      renderCanvas();
+    }
+  }, []);
   return (
     <main className="relative min-h-svh w-screen overflow-hidden">
       <div className="absolute top-4 right-4 z-10">
@@ -77,6 +88,7 @@ export default function Home() {
           </div>
         </div>
       </BackgroundGradientAnimation>
+      <canvas ref={canvasRef} className="pointer-events-none absolute inset-0" id="canvas"></canvas>
     </main>
   );
 }
