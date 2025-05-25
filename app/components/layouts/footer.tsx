@@ -20,7 +20,7 @@ export default function Footer() {
             <ul className="flex cursor-pointer items-center">
               <li>
                 <Link
-                  href="https://www.linkedin.com/in/dale-larroder/"
+                  href="https://www.linkedin.com/in/jdesai96/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="linkedin"
