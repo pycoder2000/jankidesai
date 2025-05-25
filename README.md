@@ -3,7 +3,6 @@
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Analytics**: [Logrocket](https://logrocket.com/)
 - **Content**: [MDX](https://mdxjs.com/)
 
 ## Running Locally
@@ -13,7 +12,7 @@
 1. Clone this repo
 
 ```bash
-git clone git@github.com:dlarroder/jankidesai.git
+git clone git@github.com:pycoder2000/jankidesai.git
 ```
 
 2. Change directory
@@ -28,22 +27,7 @@ cd jankidesai
 bun install
 ```
 
-1. Create a `.env.local` file following the `.env.example`
-
-```bash
-cp .env.example .env.local
-```
-
-5. Add your environment variables to `.env.local`
-
-```txt
-SPOTIFY_REFRESH_TOKEN=<Your env>
-SPOTIFY_CLIENT_SECRET=<Your env>
-SPOTIFY_CLIENT_ID=<Your env>
-// ...
-```
-
-6. Run the development server
+1. Run the development server
 
 ```bash
 bun run dev
@@ -59,4 +43,4 @@ Prevoius v1 version:
 
 ## Licence
 
-[MIT](https://github.com/dlarroder/jankidesai/blob/master/LICENSE) © [Janki Desai](https://www.jankidesai.com)
+[MIT](https://github.com/pycoder2000/jankidesai/blob/main/LICENSE) © [Janki Desai](https://www.jankidesai.com)

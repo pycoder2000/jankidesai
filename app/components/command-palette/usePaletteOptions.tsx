@@ -65,6 +65,18 @@ export default function usePaletteOptions() {
       icon: <HiOutlineDocumentAdd />,
       onSelect: (v) => router.push(v),
     },
+    {
+      id: '/projects',
+      name: 'Projects',
+      icon: <HiOutlineDocumentAdd />,
+      onSelect: (v) => router.push(v),
+    },
+    {
+      id: '/work',
+      name: 'Work',
+      icon: <HiOutlineDocumentAdd />,
+      onSelect: (v) => router.push(v),
+    },
   ];
 
   const blogOptions: PaletteOption[] = posts.map((post) => ({
