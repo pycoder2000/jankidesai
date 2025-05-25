@@ -53,7 +53,7 @@ export default function Home() {
                     <LinkedinIcon className="h-9 w-9" />
                   </Link>
                   <Link
-                    href="https://x.com/jankidesai"
+                    href="https://x.com/jankidesai96"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="twitter"
