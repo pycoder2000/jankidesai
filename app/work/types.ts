@@ -2,11 +2,11 @@ export interface WorkProject {
   title: string;
   src: string;
   color: string;
-  url: string;
-  role: string;
+  description: string;
+  tags: string[];
 }
 
-export interface ProjectModal {
+export interface WorkProjectModal {
   active: boolean;
   index: number;
 }

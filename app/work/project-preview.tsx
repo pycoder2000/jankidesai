@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
-import { WorkProjectModal } from './types';
+import { WorkProject, WorkProjectModal } from './types';
 
 interface WorkProjectModalProps {
   modal: WorkProjectModal;
