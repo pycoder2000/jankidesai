@@ -1,7 +1,6 @@
 import path from 'path';
-import { Fragment, Suspense } from 'react';
-import Footer from '../components/layouts/footer';
-import Header from '../components/layouts/header';
+import { Fragment } from 'react';
+import Header from '../components/header';
 import { CustomMDX } from '../components/mdx';
 import { readMDXFile } from '../thoughts/utils';
 import Occupation from './occupation';
@@ -17,11 +16,9 @@ export const metadata = {
 export default function Page() {
   return (
     <Fragment>
-      <Header />
+      <Header title="About" />
       <Occupation />
       <CustomMDX source={content} />
-      <Suspense fallback={<Fragment></Fragment>}></Suspense>
-      <Footer />
     </Fragment>
   );
 }
